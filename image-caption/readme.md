@@ -1,4 +1,4 @@
-# Lab 08 CSS transition
+# CSS caption transition on hover
 
 A simple CSS animation for a common visual effect, using the `transition` property.
 
