@@ -1,0 +1,34 @@
+figure {
+  width: 200px;
+  height: 300px;
+  border: 1px solid #222;
+  overflow: hidden;
+}
+figure img {
+  width: 100%;
+  height: 300px;
+  background: #eee;
+  display: block;
+}
+
+/* 
+  styles the figcaption element when the page first loads. The 
+  `transition` property simply "prepares" the element for a style 
+  transition - it does NOT trigger the transition.
+*/
+figcaption {
+  box-sizing: border-box;
+  line-height: 1.2em;
+  padding: .25em;
+  transform: translateY(0);
+  background: rgba( 255, 255, 255, .8 );
+  transition: all .5s;
+}
+/* 
+  Styles for to the `figcaption` element on hovering over the
+  `figure` element. The `transition` property on `figcaption` 
+  is then applied to `all` these hover styles, over 0.5 seconds.
+*/
+figure:hover figcaption {
+  transform: translateY(-100%);
+}
