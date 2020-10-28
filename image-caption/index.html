@@ -17,10 +17,22 @@
         A caption with any amount of text about the image, about three lines works well for this height and width
       </figcaption>
     </figure>
-    <p>
-      The figcaption holds any amount of text and appears on hover<br>
-      <small>Images from <a href="https://picsum.photos">https://picsum.photos</a></small>
-    </p>
+    <figure>
+      <img src="https://picsum.photos/200/300/" alt="placeholder">
+      <figcaption>
+        This caption text has more lines than will fit nicely, but CSS ‘line-clamp’ truncates the number of lines at 5 with an ellipsis—the rest of the text is just hidden
+      </figcaption>
+    </figure>
   </main>
+  <p>
+    The <code>figcaption</code> holds any amount of text and appears on hover. To ensure legibility, especially if the image is high-contrast, the caption uses <code>backdrop-filter: blur(4px)</code>.
+  </p>
+  <p>
+    In the example on the right, CSS <code>line-clamp</code> is set to 5 to create an ellipsis when there's more than 5 lines. You need to adjust the <code>line-height</code> to make sure the top of the sixth hidden line doesn't show.
+  </p>
+  <p>Generally it's good to avoid any <code>-webkit</code> prefixes and wait for proper browser support, but it was too tempting…</p>
+  <p>
+    <small>Images from <a href="https://picsum.photos">https://picsum.photos</a></small>
+  </p>
 </body>
 </html>

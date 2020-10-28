@@ -1,3 +1,10 @@
+main {
+  display: flex;
+}
+p {
+  max-width: 600px;
+}
+
 figure {
   width: 200px;
   height: 300px;
@@ -12,22 +19,28 @@ figure img {
 }
 
 /* 
-  styles the figcaption element when the page first loads. The 
-  `transition` property simply "prepares" the element for a style 
-  transition - it does NOT trigger the transition.
+  styles the figcaption element - `transition` "prepares"
+  the element for a style change but doesn't trigger it.
 */
 figcaption {
   box-sizing: border-box;
-  line-height: 1.2em;
+  line-height: 1.5em;
   padding: .25em;
+  background: rgba( 255, 255, 255, .6 );
+  backdrop-filter: blur(4px);
   transform: translateY(0);
-  background: rgba( 255, 255, 255, .8 );
   transition: all .5s;
+  
+  /* the below is awaiting full CSS support */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  line-clamp: 5;
 }
 /* 
-  Styles for to the `figcaption` element on hovering over the
-  `figure` element. The `transition` property on `figcaption` 
-  is then applied to `all` these hover styles, over 0.5 seconds.
+  hovering over the`figure` element shows the `figcaption` element.
+  `transition: all .5s` on `figcaption` above applies to the
+  hover styles (in this case only 'transform') over .5 seconds.
 */
 figure:hover figcaption {
   transform: translateY(-100%);
