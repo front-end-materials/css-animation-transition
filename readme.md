@@ -4,4 +4,4 @@
 
 ## TO DO
 
-- [ ] move css-lightbox to this repo
+- [ ] move css-lightbox to this repo and update MEDS2007 Lecture 4
