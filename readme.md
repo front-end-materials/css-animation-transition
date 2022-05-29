@@ -5,4 +5,5 @@
 
 ## TO DO
 
-- [ ] move css-lightbox to this repo and update MEDS2007 Lecture 4
+- [ ] move css-lightbox to this repo
+- [ ] update MEDS2007 Lecture 4 with above
