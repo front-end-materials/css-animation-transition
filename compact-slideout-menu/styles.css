@@ -23,7 +23,8 @@ body {margin: 0; font-family: sans-serif;}
   transform: translateX(-8em);
   transition: all .5s cubic-bezier(.5, 0, .5, 0);
 }
-.menu:hover {
+/* .menu:hover fails on mobile so use javaSript */
+.menushow {
   transform: translateX(0);
 }
 nav {
